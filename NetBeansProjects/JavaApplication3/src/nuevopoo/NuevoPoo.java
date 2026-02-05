@@ -33,21 +33,22 @@ public class NuevoPoo extends PApplet {
 
         cielo2 = new Caja();
         cielo2.getPosicion().setPosicion(0, 130);
-        cielo2.getDimension().setDimension(600, 130);
+        cielo2.getDimension().setDimension(600, 100);
         cielo2.setColor(color(160, 20, 20));
         cielo2.getBorde().setAncho(0);
 
         cielo3 = new Caja();
-        cielo3.getPosicion().setPosicion(0, 260);
-        cielo3.getDimension().setDimension(600, 80);
+        cielo3.getPosicion().setPosicion(0, 230);
+        cielo3.getDimension().setDimension(600, 100);
         cielo3.setColor(color(210, 60, 30));
         cielo3.getBorde().setAncho(0);
 
         sol = new Circulo();
-        sol.getPosicion().setPosicion(180, 40);
+        sol.getPosicion().setPosicion(170, 120);
         sol.getDimension().setDimension(200, 200);
-        sol.setColor(color(255, 120, 0));
+        sol.setColor(color(255, 110, 0));
         sol.getBorde().setAncho(0);
+        
         
         suelo = new Caja();
         suelo.getPosicion().setPosicion(0, 330);
@@ -64,17 +65,16 @@ public class NuevoPoo extends PApplet {
         cielo2.dibujar(this);
         cielo3.dibujar(this);
         sol.dibujar(this);
+        sol.moverHorizontal();
 
         //montanas
-        noStroke();
-
         fill(60, 25, 15); // lejanas
         triangle(40, 320, 200, 180, 360, 320);
 
         fill(40, 15, 10); // medias
         triangle(220, 330, 400, 210, 580, 330);
 
-        fill(20, 10, 5); // cercanas
+        fill(35, 10, 5); // cercanas
         triangle(-60, 330, 120, 220, 300, 330);
         
         fill(0);

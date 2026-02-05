@@ -1,10 +1,10 @@
 package models;
 
 public class Posicion {
-    private int x;
-    private int y;
+    private float x;
+    private float y;
     
-    public Posicion(int x, int y) {
+    public Posicion(float x, float y) {
         this.x = x;
         this.y = y;
     }
@@ -15,30 +15,30 @@ public class Posicion {
     }
     
     // Getters y Setters
-    public int getX() {
+    public float getX() {
         return this.x;
     }
     
-    public void setX(int x) {
+    public void setX(float x) {
         this.x = x;
     }
     
-    public int getY() {
+    public float getY() {
         return this.y;
     }
     
-    public void setY(int y) {
+    public void setY(float y) {
         this.y = y;
     }
     
     // Método para establecer ambas coordenadas a la vez
-    public void setPosicion(int x, int y) {
+    public void setPosicion(float x, float y) {
         this.x = x;
         this.y = y;
     }
     
     // Método para mover la posición
-    public void mover(int dx, int dy) {
+    public void mover(float dx, float dy) {
         this.x += dx;
         this.y += dy;
     }
